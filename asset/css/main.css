@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Belanosima', sans-serif;
+    background: #fff;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+.cajaone{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor{
+    display: flex;
+    width: 420px;
+    height: 440px;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  7px 7px 7px #f5eded,
+             -7px -7px 7px #dbdbdb;
+}
+
+.contar{
+    font-size: 160px;
+}
+.time {
+    font-size: 60px;
+}
+
+.botones{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 5px;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: rgb(0, 0, 0);
+    border:none;
+    border-radius: 5px;
+    font-family: 'Belanosima', sans-serif;
+}
+
+span{
+    color:#fff;
+}
+
+.reset{
+    width: 50px;
+    height: 25px;
+}
+
+
+.button {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+  }
+  
+  .show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  .modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .modal h1 {
+    margin: 0;
+  }
+  
+  .modal p {
+    opacity: 0.7;
+    font-size: 14px;
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCER Counter</title>
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section>
+            <center><img src="./asset/img/logodeTCCON.png" alt=""></center>
+            
+        </section>
+        <section class="cajaone">
+            <section class="contador1">
+                <div class="contenedor">
+                    <p class="titulo">Local</p>
+                    <p class="contar" id="contar">0</p>
+                
+                    <div class="botones">
+                        <button class="incr" id="incr"><span class="material-icons-round">add</span></button>
+                        <br>
+                        <button class="decr" id="decr"><span class="material-icons-round">remove</span></button>
+                        <br>
+                        <button class="reset" id="reset"><span class="material-icons-round">cached</span></button>
+                    </div>
+                   </div> 
+            </section>
+            <section class="section">
+                <div class="columns">
+                    <div class="column has-text-centered">
+                        <h2 class= "time" id="tiempoTranscurrido"></h2>
+                        <button class="button is-success is-large" id="btnIniciar"><span class="mdi mdi-play"></span></button>
+                        <button class="button is-success is-large" id="btnPausar"><span class="mdi mdi-pause"></span></button>
+                        <button class="button is-primary is-large" id="btnMarca"><span class="mdi mdi-flag"></span></button>
+                        <button class="button is-warning is-large" id="btnDetener"><span class="mdi mdi-stop"></span></button>
+                        <div id="contenedorMarcas">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contador2">
+                <div class="contenedor">
+                    <p class="titulo">Visitanten</p>
+                    <p class="contar" id="contarr">0</p>
+                
+                    <div class="botones">
+                        <button class="incr" id="incrr"><span class="material-icons-round">add</span></button>
+                        <br>
+                        <button class="decr" id="decrr"><span class="material-icons-round">remove</span></button>
+                        <br>
+                        <button class="reset" id="resett"><span class="material-icons-round">cached</span></button>
+                    </div>
+                   </div> 
+            </section>
+        </section>
+        
+    </main>
+    <script src="./asset/js/script.js"></script>
+</body>
+</html>
