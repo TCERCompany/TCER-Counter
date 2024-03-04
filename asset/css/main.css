@@ -8,23 +8,28 @@
 
 body{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
     font-family: 'Belanosima', sans-serif;
     background: #fff;
 }
+
+main{
+    margin-inline: auto;
+}
+
 img{
-    height: 150px;
-    width: 150px;
+    height: 350px;
+    width: 350px;
 }
 .cajaone{
     display: flex;
     justify-content: space-between;
+    width: fit-content;
+    padding-block: 25px;
 }
 .contenedor{
     display: flex;
-    width: 420px;
+    width: 380px;
     height: 440px;
     color: #000;
     justify-content: center;
@@ -98,12 +103,12 @@ span{
     transition: opacity 0.3s ease;
   }
   
-  .show {
+.show {
     pointer-events: auto;
     opacity: 1;
-  }
+}
   
-  .modal {
+.modal {
     background-color: #fff;
     width: 600px;
     max-width: 100%;
@@ -111,13 +116,30 @@ span{
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
+}
   
-  .modal h1 {
+.modal h1 {
     margin: 0;
-  }
+}
   
-  .modal p {
+.modal p {
     opacity: 0.7;
     font-size: 14px;
-  }
+}
+  
+.section{
+    width: 310px;
+    margin-inline: auto;
+}
+
+@media (max-width: 1100px){
+    .cajaone{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px){
+    .cajaone, .contenedor{
+        width: 300px;
+    }
+}
