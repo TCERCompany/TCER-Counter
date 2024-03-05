@@ -225,7 +225,7 @@ a.nav__link:hover, a.more__link:hover{
 }
 
 @media (min-width: 300px){
-	.footer{ 
+	footer.footer{ 
 		flex-direction: column;
 		row-gap: 25px;
 		padding-inline: 0;
@@ -233,7 +233,7 @@ a.nav__link:hover, a.more__link:hover{
 }
 
 @media (min-width: 1000px){
-	.footer{
+	footer.footer{
 		flex-direction: row;
 		row-gap: 0;
 		padding-inline: 100px;
