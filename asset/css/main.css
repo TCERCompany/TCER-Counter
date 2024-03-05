@@ -3,8 +3,12 @@
 :root{
     /* FONT SIZE */
     --fs-1: 2.35rem;
+    --fs-6: 1rem;
+    --fs-footer: 0.90rem;
     --fs-counter: 180px;
     --fs-timer: 60px;
+
+    --fw-600: 600;
 
     /* COLORS */
     --cultured: hsl(225, 20%, 96%);
@@ -13,27 +17,23 @@
     --blue-main: #01A4EF;
     --green-main: #91D945;
     --soft-gray: #4a4a4a;
+    --blue-link: #3366BB;
+    --onyx: hsl(207, 8%, 21%);
+
+    /* MARGIN */
+    --margin-2: 50px;
 
     /* FONTS */
     --ff-main: "Madimi One", sans-serif;
     --ff-counter: 'Belanosima', sans-serif;
 }
 
+/* WEB CONTENT */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
-    display: flex;
-    align-items: center;
-    font-family: var(--ff-counter);
-    background: var(--white);
-}
-
-main{
-    margin-inline: auto;
 }
 
 img{
@@ -45,6 +45,7 @@ img{
     justify-content: space-between;
     width: fit-content;
     padding-block: 25px;
+    margin-inline: auto;
 }
 .contenedor{
     display: flex;
@@ -179,16 +180,15 @@ a{
 	color: var(--black);
 }
 
-.footer{
+footer.footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-block: 50px;
+	padding-block: 30px;
 	padding-inline: 100px;
 	margin-top: var(--margin-2);
-	
-	background-color: var(--white);
-	border-top: var(--border-1);
+    background-color: var(--white);
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .nav, .social, .more{
@@ -199,16 +199,18 @@ a{
 
 .nav__title{
 	font-size: var(--fs-6);
-	color: var(--blue-link);
+    color: var(--onyx);
 }
 
 .nav__link, .more__link{
 	font-size: var(--fs-footer);
 	font-weight: var(--fw-600);
+    color: var(--blue-link);
 }
 
-.nav__link:hover, .more__link:hover{
+a.nav__link:hover, a.more__link:hover{
 	text-decoration: underline;
+    color: var(--blue-link);
 }
 
 .social__img{
