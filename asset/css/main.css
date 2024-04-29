@@ -82,7 +82,7 @@ img{
     align-items: center;
 }
 
-button{
+button.action-button{
     margin: 5px;
     width: 70px;
     height: 25px;
