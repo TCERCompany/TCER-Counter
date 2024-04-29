@@ -36,8 +36,8 @@
     box-sizing: border-box;
 }
 
-html{
-    background: var(--white);
+html.html-content{
+    background-color: var(--white);
 }
 
 img{
